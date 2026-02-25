@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>open_me.sh</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body class="bg-dark">
+  <main class="cover">
+    <div class="cover-card">
+      <div class="cover-top">
+        <div class="window-dots">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+        </div>
+      </div>
+
+      <div class="cover-body">
+        <div class="cover-gif" id="coverGif">
+          <img
+            class="cover-gif-img"
+            src="https://media.tenor.com/gSSvSRwMM2cAAAAi/milk-and-mocha.gif"
+            alt="cute bear gif"
+          />
+          <div class="scanlines" aria-hidden="true"></div>
+          <div class="vignette" aria-hidden="true"></div>
+        </div>
+
+        <!-- A) Rotating one-liner: still ONE line -->
+        <div class="cover-line" id="coverLine" role="status" aria-live="polite">
+          <span class="prompt">$</span>
+          <span class="type" id="rotatingLine"></span>
+          <span class="cursor"></span>
+        </div>
+
+        <!-- C) terminal prompt button -->
+        <div class="cover-actions">
+          <a class="cmdBtn" href="terminal.html" id="openRepo">
+            <span class="prompt">$</span>
+            <span class="cmdText">open terminal</span>
+            <span class="kbd">⏎</span>
+          </a>
+
+          <a class="btn btn-ghost" href="readme.html">open README.md</a>
+        </div>
+
+        <!-- metadata chips removed per request -->
+      </div>
+    </div>
+
+    <!-- B) Cute toast for easter eggs -->
+    <div class="toast" id="toast" aria-live="polite"></div>
+  </main>
+
+  <script src="cover.js"></script>
+</body>
+</html>

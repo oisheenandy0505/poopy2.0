@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>README.md</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body class="bg-dark">
+  <main class="wrap">
+    <header class="readme-head">
+      <div class="readme-topbar">
+        <div class="window-dots">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+        </div>
+        <div class="tab">README.md</div>
+        <div class="readme-actions">
+          <a class="btn-mini ghost" href="terminal.html">← terminal</a>
+          <a class="btn-mini" href="index.html">home</a>
+        </div>
+      </div>
+
+    </header>
+
+    <section class="panel readme-panel">
+      <div class="panel-title">Hi baby</div>
+
+      <article class="readme-body">
+
+        <p>
+          I’m sorry. Truly. Not in a “please forget it” way - in a
+          <span class="hl-pink">“I understand the impact, and I own my part”</span> way.
+        </p>
+
+        <p>
+          I’ve had time to sit with what happened and what it says about me.
+          The root wasn’t anger or manipulation or anything you did — it was
+          <span class="hl-yellow">fear</span>.
+          Fear that I’m not enough, fear of being vulnerable, fear of disappointing you.
+        </p>
+
+        <p>
+          Here’s what matters most: you didn’t deserve any confusion, mixed signals, or emotional turbulence.
+          You deserve someone who communicates clearly, trusts your love, and respects your effort.
+          <span class="hl-blue">That’s the standard.</span>
+        </p>
+
+        <p>
+          I’m not going to make you carry my insecurity.
+          I’m not going to turn love into a guessing game.
+          I’m not going to need you to “prove” anything to calm me down.
+          <span class="hl-green">That’s my job.</span>
+        </p>
+
+        <p>
+          I’ve started making changes :
+          shifting my mindset to acknowledge feelings when they show up and being direct,
+          and building a life where I feel grounded in myself - career, confidence, routine —
+          so I don’t look to you to fix what I need to build internally.
+        </p>
+
+        <p>
+          And I want you to know this clearly:
+          <span class="hl-pink">I’m here to stay.</span>
+          I’m here to grow up emotionally, not just say pretty words.
+          I got really lucky with you — and I’m not letting my own stupidity get in the way of something good.
+        </p>
+
+        <p class="readme-end">
+          You don’t have to monitor me.
+          You don’t have to manage my growth.
+          You don’t have to hold my hand through every feeling.
+          What you <em>can</em> do is just be you —
+          and I’ll meet you there with vulnerability, honesty, and love.
+          <button class="envelope-link" id="openEnvelope" type="button">
+            <span class="hl-pink"><strong>click me! ✉️</strong></span>
+          </button>
+        </p>
+      </article>
+    </section>
+  </main>
+
+  <!-- Envelope Modal -->
+  <div class="modal" id="modal" role="dialog" aria-modal="true" aria-label="envelope">
+    <div class="modal-card" id="modalCard">
+      <div class="modal-top">
+        <div class="modal-title">
+          <span class="hl-blue">envelope</span><span class="hl-muted">.open()</span>
+          <span class="tiny-muted"> • use the arrows at the bottom to swipe</span>
+        </div>
+        <button class="modal-close" id="closeModal" type="button" aria-label="close">×</button>
+      </div>
+
+      <div class="carousel" id="carousel">
+        <!-- Slides injected by JS -->
+      </div>
+
+      <div class="carousel-bottom">
+        <div class="dots" id="dots"></div>
+        <div class="carousel-actions">
+          <button class="btn-mini ghost" id="prevBtn" type="button">←</button>
+          <button class="btn-mini" id="nextBtn" type="button">→</button>
+        </div>
+      </div>
+
+      <div class="modal-note">
+        <span class="hl-pink">note:</span>
+        you make my world better 💗
+      </div>
+    </div>
+  </div>
+
+  <script src="readme.js"></script>
+</body>
+</html>
