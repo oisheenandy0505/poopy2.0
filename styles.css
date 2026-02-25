@@ -95,6 +95,7 @@ body{
   color: var(--text);
   background: rgba(255,255,255,.04);
   cursor:pointer;
+  white-space: nowrap;
 }
 .btn-mini.ghost{ background: rgba(255,255,255,.02); }
 

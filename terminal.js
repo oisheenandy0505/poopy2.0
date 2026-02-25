@@ -100,58 +100,38 @@ async function run() {
 
   const chapters = [
     {
-      label: "prep",
-      pct: 18,
-      steps: [
-        { cmd: "git checkout baseline/me"}
-      ]
-    },
-    {
       label: "branch",
-      pct: 32,
+      pct: 25,
       steps: [
-        { cmd: "git checkout -b fix/recursive-overthinking"}
+        { cmd: "git switch -c fix/recursive-overthinking" }
       ]
     },
     {
-      label: "fixes",
-      pct: 62,
+      label: "commit",
+      pct: 55,
       steps: [
         {
-          cmd: "git commit -m \"fix: reacting from fear instead of honesty\"",
-          outs: ["✓ root cause identified + talked through (complete)"]
-        },
-        {
-          cmd: "git commit -m \"feat: trust the love I’m given\"",
-          outs: ["✓ building faith that you're here to stay (complete)"]
-        },
-        {
-          cmd: "git commit -m \"refactor: clear + honest communication\"",
-          outs: ["→ practicing direct, honest communication (in progress)"]
+          cmd: "git commit -am \"fix: break recursive overthinking loop\"",
+          outs: ["✓ awareness + ownership"]
         }
       ]
     },
     {
-      label: "diff",
-      pct: 78,
+      label: "review",
+      pct: 75,
       steps: [
         { cmd: "git diff baseline/me...fix/recursive-overthinking", diff: true }
       ]
     },
     {
-      label: "push",
-      pct: 88,
-      steps: [
-        { cmd: "git push -u origin fix/recursive-overthinking", outs: ["pushed: fix/recursive-overthinking"] }
-      ]
-    },
-    {
       label: "merge",
-      pct: 96,
+      pct: 100,
       steps: [
-        { cmd: "git switch baseline/me"},
-        { cmd: "git merge fix/recursive-overthinking"},
-        { cmd: "git push origin baseline/me"}
+        { cmd: "git switch baseline/me" },
+        {
+          cmd: "git merge fix/recursive-overthinking",
+          outs: ["baseline/me updated with new patterns."]
+        }
       ]
     }
   ];
